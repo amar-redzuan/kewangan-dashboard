@@ -1,0 +1,87 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  background: color-mix(in srgb, var(--bg), white 3%);
+}
+
+.form {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+button {
+  cursor: pointer;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 10px;
+}
+
+.totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.entries,
+.summary {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.entries li,
+.summary li {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.entries li div {
+  display: grid;
+  gap: 4px;
+}
+
+.income {
+  color: #16a34a;
+}
+
+.expense {
+  color: #dc2626;
+}
